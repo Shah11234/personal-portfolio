@@ -1,4 +1,4 @@
-# personal-portfolio
+# My Personal Portfolio
 
 ## Here is the link for my personal website:
 
