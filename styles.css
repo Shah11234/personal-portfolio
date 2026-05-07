@@ -455,7 +455,6 @@ body {
     color: var(--accent-purple);
 }
 
-
 .profile-image {
     width: 300px;
     height: 300px;
@@ -563,6 +562,31 @@ body {
     gap: 30px;
 }
 
+/* VT logo image override */
+.edu-logo-img {
+    background: #ffffff;
+    border-color: #861F41;
+    padding: 8px;
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+}
+
+.vt-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Single card — centered and constrained */
+.education-single {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
 .education-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -610,6 +634,14 @@ body {
 .edu-focus {
     color: var(--text-muted);
     font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.edu-courses {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-style: italic;
+    line-height: 1.6;
     margin-bottom: 12px;
 }
 
@@ -760,6 +792,13 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
+}
+
+/* Two projects — side by side, centered */
+.projects-two {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -1103,6 +1142,11 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
     }
+
+    .projects-two {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1155,6 +1199,11 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-two {
+        grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
     .skills-grid {
